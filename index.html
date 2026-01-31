@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Programación</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="encabezado-institucional">
+
+  <div class="info-colegio">
+    <img src="dolores sucre.jpg" alt="Unidad Educativa Fiscal Dolores Sucre">
+    <div class="datos-colegio">
+      <h2>UNIDAD EDUCATIVA FISCAL “DOLORES SUCRE”</h2>
+      <p>Fundado el 05 de julio de 1950</p>
+      <p>Decreto N.º 1108</p>
+      <p>Código AMIE: 09H01213 · Distrito 09D06 · Circuito 09D06C05_06</p>
+      <p>Av. Martha Bucaram de Roldós, Km. 5 ½, Vía a Daule</p>
+      <p class="correo">
+        E-mail: 
+        <a href="mailto:u.e.fiscal.doloressucre@gmail.com">
+          u.e.fiscal.doloressucre@gmail.com
+        </a>
+      </p>
+      <p class="anio">2025 – 2026</p>
+    </div>
+  </div>
+
+  <div class="titulo-pagina">
+    <h1>SIMULADOR DE PROGRAMACIÓN PARA ESTUDIANTES</h1>
+    <p>Domina los conceptos más profundos del desarrollo de software</p>
+  </div>
+</header>
+
+
+<nav>
+    <button onclick="showSection('inicio')">Inicio</button>
+    <button onclick="showSection('t1')">Primer Trimestre</button>
+    <button onclick="showSection('t2')">Segundo Trimestre</button>
+    <button onclick="showSection('t3')">Tercer Trimestre</button>
+</nav>
+
+<div class="score" id="score-box">⭐ Puntos: <span id="score">0</span></div>
+
+<section id="inicio" class="active">
+    <div class="card">
+        <h2>Guía de la Plataforma</h2>
+        <p>Bienvenido al simulador de aprendizaje profesional. Esta plataforma ha sido diseñada para servir como un centro de estudio interactivo donde la teoría y la práctica se encuentran para consolidar tus conocimientos en programación.</p>
+        
+        <h3>¿Cómo funciona este sitio?</h3>
+        <p>El portal se divide en tres niveles progresivos que puedes navegar desde la parte superior:</p>
+        <ul>
+            <li><strong>Módulos de Estudio:</strong> En cada trimestre encontrarás explicaciones detalladas sobre los pilares de la ingeniería de software: Lógica, Control de Flujo y Estructuras Avanzadas.</li>
+            <li><strong>Autoevaluación:</strong> Al final de cada sección informativa, podrás activar un simulador que pondrá a prueba tu retención de los conceptos leídos mediante 15 preguntas aleatorias.</li>
+            <li><strong>Gamificación:</strong> Cada respuesta correcta te otorga 10 puntos. ¡Intenta conseguir el puntaje perfecto de 150 puntos en cada nivel!</li>
+        </ul>
+
+        <h3>Recomendaciones de Estudio</h3>
+        <p>Para maximizar tu aprendizaje, te sugerimos leer detenidamente los conceptos en cada pestaña antes de iniciar la simulación. La programación requiere entender el <strong>"por qué"</strong> antes que el "cómo".</p>
+    </div>
+</section>
+
+<section id="t1">
+    <div class="card">
+        <h2>Primer Trimestre – Fundamentos</h2>
+
+        <span class="subtema">¿Qué es un algoritmo?</span>
+        <span class="concepto">
+            Un algoritmo es una secuencia finita de instrucciones claras y ordenadas que permite resolver un problema de manera eficiente. 
+            Su correcta planificación es crucial, ya que un algoritmo mal diseñado puede generar errores, retrasos o resultados incorrectos. 
+            Los algoritmos pueden representarse mediante pseudocódigo, diagramas de flujo o directamente en un lenguaje de programación, facilitando su comprensión y desarrollo. 
+            Además, son la base de cualquier software, desde aplicaciones simples hasta sistemas complejos de inteligencia artificial.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Orden secuencial de pasos.</li>
+                <li>Instrucciones claras y precisas.</li>
+                <li>Debe tener inicio y fin definidos.</li>
+                <li>Representable en pseudocódigo, diagramas o código.</li>
+                <li>Base para cualquier programa o sistema.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Una receta para preparar un café, indicando paso a paso cómo hervir agua, añadir café y servir.</span>
+
+        <span class="subtema">Pasos lógicos</span>
+        <span class="concepto">
+            Los pasos lógicos son las acciones que deben ejecutarse en un orden coherente para garantizar el funcionamiento correcto de un algoritmo. 
+            Cada instrucción tiene sentido solo si se coloca en la secuencia adecuada; cambiar el orden puede provocar fallos o resultados inesperados. 
+            Comprender los pasos lógicos permite optimizar procesos y reducir la complejidad del código, siendo una habilidad esencial para todo programador.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Secuencia coherente de acciones.</li>
+                <li>Facilitan la comprensión del algoritmo.</li>
+                <li>Permiten optimizar y depurar procesos.</li>
+                <li>Base de la lógica computacional.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Servir el café antes de beberlo, siguiendo un orden lógico.</span>
+
+        <span class="subtema">Entrada y salida de datos</span>
+        <span class="concepto">
+            La entrada de datos consiste en la información que recibe un programa para procesarla, mientras que la salida es el resultado que se devuelve después de procesarla. 
+            Esta interacción con el usuario o con otros sistemas permite que los programas sean dinámicos y útiles. 
+            Comprender bien este concepto es clave para diseñar aplicaciones que respondan correctamente a diferentes escenarios y para garantizar que los resultados sean confiables.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Entrada: información que recibe el programa.</li>
+                <li>Salida: resultados que el programa devuelve.</li>
+                <li>Permiten interacción con usuarios o sistemas.</li>
+                <li>Clave para la validación y confiabilidad.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Ingresar números (Entrada) -> Mostrar suma total (Salida).</span>
+
+        <span class="subtema">Variables</span>
+        <span class="concepto">
+            Las variables son espacios en memoria que almacenan datos que pueden cambiar durante la ejecución de un programa. 
+            Permiten guardar información temporal, como resultados intermedios de cálculos, y manipular datos de forma flexible. 
+            Conocer su tipo, alcance y duración es fundamental para programar de manera eficiente y evitar errores como sobrescribir información importante. 
+            Su correcta utilización mejora la legibilidad y mantenibilidad del código.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Almacenan información temporal.</li>
+                <li>Pueden cambiar su valor durante la ejecución.</li>
+                <li>Tipos: enteros, decimales, texto, booleanos.</li>
+                <li>Importantes para cálculos y lógica del programa.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Un cronómetro que guarda el tiempo transcurrido y lo actualiza cada segundo.</span>
+
+        <span class="subtema">Tipos de datos</span>
+        <span class="concepto">
+            Los tipos de datos determinan la clase de valor que puede almacenar una variable, como números enteros, decimales, texto o valores lógicos. 
+            Conocer los tipos de datos permite optimizar la memoria, garantizar cálculos correctos y evitar errores de compatibilidad. 
+            Cada tipo de dato tiene propiedades y operaciones específicas que se pueden realizar sobre él.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Definen la naturaleza del valor almacenado.</li>
+                <li>Permiten optimizar memoria y cálculos.</li>
+                <li>Facilitan interacción entre variables y funciones.</li>
+                <li>Importantes para control de errores.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Número (Int) vs Texto (String), como edad = 18 y nombre = "María".</span>
+
+        <span class="subtema">Enteros</span>
+        <span class="concepto">
+            Los enteros son números sin parte decimal, incluyendo positivos, negativos y el cero. 
+            Son esenciales para conteos, índices de arreglos, ciclos de repetición y operaciones matemáticas básicas. 
+            Permiten realizar cálculos precisos y operaciones discretas, siendo la base para estructuras de control.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Números sin decimales.</li>
+                <li>Incluyen positivos, negativos y cero.</li>
+                <li>Se usan en conteos y ciclos.</li>
+                <li>Fundamentales para cálculos exactos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: 7, -2, 0, 15.</span>
+
+        <span class="subtema">Decimales</span>
+        <span class="concepto">
+            Los números decimales contienen una parte fraccionaria y permiten representar valores más precisos que los enteros. 
+            Se utilizan en cálculos de precios, medidas, estadísticas y cualquier situación que requiera exactitud. 
+            Comprender su manejo y formato es fundamental para evitar errores de redondeo o pérdida de información.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Contienen parte fraccionaria.</li>
+                <li>Se usan para cálculos precisos.</li>
+                <li>Representados por float o double en programación.</li>
+                <li>Claves en medidas, estadísticas y finanzas.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: 12.50, 3.1416.</span>
+
+        <span class="subtema">Cadenas de texto</span>
+        <span class="concepto">
+            Las cadenas de texto son secuencias de caracteres que representan palabras, frases o símbolos, generalmente encerradas entre comillas. 
+            Se usan para almacenar nombres, mensajes, instrucciones y cualquier información textual. 
+            Permiten concatenar, modificar y comparar texto de manera eficiente dentro de un programa.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Secuencias de caracteres.</li>
+                <li>Encerradas entre comillas.</li>
+                <li>Se pueden concatenar y modificar.</li>
+                <li>Claves para interacción y salida de datos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: "Hola Mundo", "Unidad Educativa Dolores Sucre".</span>
+
+        <span class="subtema">Booleanos</span>
+        <span class="concepto">
+            Los valores booleanos representan verdadero o falso y son fundamentales para el control de flujo en los programas. 
+            Se utilizan en condicionales, bucles y validaciones, determinando qué camino debe seguir el algoritmo. 
+            Permiten combinar condiciones complejas con operadores lógicos para lograr resultados precisos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Solo tienen dos valores: True o False.</li>
+                <li>Clave para decisiones y validaciones.</li>
+                <li>Se combinan con operadores lógicos.</li>
+                <li>Usados en control de flujo y bucles.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: True / False, usado en verificar si un usuario está registrado.</span>
+
+        <span class="subtema">Operadores matemáticos</span>
+        <span class="concepto">
+            Los operadores matemáticos son símbolos que permiten realizar operaciones aritméticas como suma, resta, multiplicación y división. 
+            Son la base para cualquier cálculo en programación, desde operaciones simples hasta fórmulas complejas. 
+            Con su uso adecuado se pueden crear algoritmos precisos y eficientes.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Permiten realizar operaciones aritméticas.</li>
+                <li>Incluyen +, -, *, /.</li>
+                <li>Claves en cálculos y algoritmos.</li>
+                <li>Fundamentales para manipulación de datos numéricos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: 10 + 5 = 15, 20 * 2 = 40.</span>
+
+        <span class="subtema">Operadores lógicos</span>
+        <span class="concepto">
+            Permiten combinar y comparar condiciones dentro de un programa para tomar decisiones complejas. 
+            Los principales son AND (Y), OR (O) y NOT (NO), que permiten evaluar múltiples situaciones al mismo tiempo. 
+            Su correcta comprensión evita errores en la ejecución de condicionales y bucles.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Combinan y comparan condiciones.</li>
+                <li>Principales: AND, OR, NOT.</li>
+                <li>Permiten decisiones complejas.</li>
+                <li>Usados en validaciones y control de flujo.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: ¿Es azul Y es grande? Solo se cumple si ambas condiciones son verdaderas.</span>
+
+        <span class="subtema">Condicionales</span>
+        <span class="concepto">
+            Son estructuras que permiten que el programa tome decisiones según si una condición se cumple o no. 
+            Facilitan el control del flujo del algoritmo, asegurando que se ejecuten las acciones correctas en cada situación. 
+            Se usan para validar datos, controlar bucles y ejecutar diferentes procesos según las circunstancias.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Evalúan condiciones y determinan acciones.</li>
+                <li>Clave para control de flujo.</li>
+                <li>Se combinan con operadores lógicos.</li>
+                <li>Usadas en validaciones y decisiones.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Si llueve, usar paraguas; si hace sol, usar gafas de sol.</span>
+
+        <span class="subtema">If / Else</span>
+        <span class="concepto">
+            Estructura de control que permite ejecutar un bloque de código si una condición es verdadera (IF) y otro bloque si es falsa (ELSE). 
+            Facilita decisiones binarias dentro de un programa y evita la repetición de código. 
+            Su correcto uso garantiza que el flujo del algoritmo sea claro, organizado y predecible.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Ejecuta bloques según condición verdadera o falsa.</li>
+                <li>Evita duplicación de código.</li>
+                <li>Claves para decisiones binarias.</li>
+                <li>Base de la programación condicional.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: IF (edad >= 18) { "Pasa"; } ELSE { "Espera"; }</span>
+
+        <span class="subtema">Pseudocódigo</span>
+        <span class="concepto">
+            Es una forma de escribir la lógica de un algoritmo usando un lenguaje natural o simplificado. 
+            Permite planificar soluciones, identificar errores y organizar ideas antes de programar. 
+            Facilita la comunicación entre programadores y la comprensión de los procesos para personas sin conocimientos técnicos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Lenguaje natural o simplificado.</li>
+                <li>Planifica y organiza la lógica.</li>
+                <li>Facilita comunicación y documentación.</li>
+                <li>Permite detectar errores antes de programar.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Escribir "Hola", sumar dos números y mostrar el resultado.</span>
+
+        <span class="subtema">Diagramas de flujo</span>
+        <span class="concepto">
+            Representación gráfica de los pasos de un algoritmo mediante símbolos estandarizados: rectángulos para procesos, rombos para decisiones y flechas para indicar flujo. 
+            Facilita la comprensión visual de la lógica y permite detectar errores antes de codificar. 
+            Es útil en enseñanza y planificación de proyectos complejos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Representación gráfica de algoritmos.</li>
+                <li>Usa símbolos estandarizados (óvalo, rectángulo, rombo).</li>
+                <li>Flechas indican la secuencia de pasos.</li>
+                <li>Facilita análisis, documentación y mejora de procesos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Rectángulo para "sumar números", rombo para "¿es mayor que 10?", flechas conectando pasos.</span>
+
+        <div class="video-link">
+            <h3>Diagrama de flujo</h3>
+            <a href="https://www.youtube.com/watch?v=Kucgc6NpGwc" target="_blank">
+                Ver Video
+            </a>
+        </div>
+        <div class="video-link">
+            <h3>Condicionales</h3>
+            <a href="https://www.youtube.com/watch?v=RaWfeVgkWbE" target="_blank">
+                Ver Video
+            </a>
+        </div>
+
+        <button class="sim-btn" onclick="startSim(1)">Iniciar Simulación (15 Preguntas)</button>
+    </div>
+</section>
+
+<section id="t2">
+    <div class="card">
+        <h2>Segundo Trimestre – Control y lógica</h2>
+
+        <span class="subtema">Bucles</span>
+        <span class="concepto">
+            Los bucles son estructuras que permiten repetir un conjunto de instrucciones automáticamente hasta que se cumpla una condición. 
+            Facilitan la automatización de tareas repetitivas, evitando la escritura duplicada de código. 
+            Pueden controlarse mediante condiciones o un número definido de repeticiones y son fundamentales para procesos iterativos y eficientes en programación. 
+            Comprender su funcionamiento es clave para desarrollar algoritmos más complejos y dinámicos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Repetición automática de instrucciones.</li>
+                <li>Controlados por condiciones o número de repeticiones.</li>
+                <li>Permiten automatizar tareas repetitivas.</li>
+                <li>Fundamentales para programación eficiente.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Un ventilador que gira mientras esté encendido, repitiendo constantemente la acción.</span>
+
+        <span class="subtema">For</span>
+        <span class="concepto">
+            El bucle "for" se utiliza cuando se conoce el número exacto de repeticiones que se deben realizar. 
+            Permite iterar sobre listas, rangos de números o elementos de manera controlada, siendo especialmente útil en cálculos, generación de secuencias y procesamiento de datos. 
+            Su sintaxis clara facilita la lectura y comprensión del código, haciendo que la programación sea más estructurada y predecible.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Itera un número definido de veces.</li>
+                <li>Ideal para listas y rangos de datos.</li>
+                <li>Sintaxis clara y estructurada.</li>
+                <li>Usado en cálculos y secuencias controladas.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Repetir 10 veces una canción o imprimir números del 1 al 10.</span>
+
+        <span class="subtema">While</span>
+        <span class="concepto">
+            El bucle "while" ejecuta instrucciones mientras una condición específica sea verdadera. 
+            Es útil cuando no se conoce de antemano cuántas veces se debe repetir la acción, permitiendo crear programas más flexibles y dinámicos. 
+            Si no se define correctamente la condición, puede generar bucles infinitos, por lo que es importante un uso cuidadoso.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Se ejecuta mientras la condición sea verdadera.</li>
+                <li>No requiere conocer el número de repeticiones.</li>
+                <li>Permite procesos flexibles y dinámicos.</li>
+                <li>Debe manejarse cuidadosamente para evitar bucles infinitos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Mientras haya comida en el plato, seguir comiendo hasta que se termine.</span>
+
+        <span class="subtema">Do While</span>
+        <span class="concepto">
+            El bucle "do while" ejecuta primero las instrucciones y luego evalúa la condición para decidir si repetir. 
+            Esto garantiza que el bloque de código se ejecute al menos una vez, siendo ideal para situaciones donde se necesita realizar una acción inicial antes de evaluar condiciones. 
+            Se usa para validar entradas de usuario o realizar comprobaciones previas a un proceso repetitivo.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Ejecuta el bloque de código al menos una vez.</li>
+                <li>Evalúa la condición después de la primera ejecución.</li>
+                <li>Útil para validaciones iniciales.</li>
+                <li>Permite repetir procesos según condiciones.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Probar un bocado de comida y luego decidir si se desea comer más.</span>
+
+        <span class="subtema">Contadores</span>
+        <span class="concepto">
+            Un contador es una variable que aumenta o disminuye de manera controlada, generalmente en incrementos de uno. 
+            Se utiliza para llevar registro del número de iteraciones o eventos ocurridos durante la ejecución de un programa. 
+            Es fundamental en bucles y en la medición de procesos repetitivos, permitiendo evaluar progresos y controlar ciclos con precisión.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Lleva registro de iteraciones o eventos.</li>
+                <li>Incrementa o decrementa valores controladamente.</li>
+                <li>Fundamental en bucles y conteos.</li>
+                <li>Permite controlar procesos con precisión.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: c = c + 1, usado para contar cuántos usuarios han iniciado sesión.</span>
+
+        <span class="subtema">Acumuladores</span>
+        <span class="concepto">
+            Un acumulador es una variable que suma o acumula valores a lo largo del tiempo. 
+            Se utiliza para calcular totales, promedios o resultados agregados dentro de un programa, ayudando a procesar datos de manera eficiente. 
+            Es fundamental en operaciones financieras, estadísticas o cualquier escenario que requiera sumar progresivamente datos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Suma o acumula valores durante la ejecución.</li>
+                <li>Útil para totales, promedios o agregados.</li>
+                <li>Fundamental en estadísticas y finanzas.</li>
+                <li>Permite mantener un historial de cálculos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: total = total + precio, para calcular el costo total de un carrito de compras.</span>
+
+        <span class="subtema">Funciones</span>
+        <span class="concepto">
+            Una función es un bloque de código reutilizable que realiza una tarea específica y puede recibir datos de entrada. 
+            Permite organizar el código, reducir la repetición y mejorar la legibilidad. 
+            Las funciones pueden devolver resultados, facilitando la modularización y reutilización en diferentes partes del programa.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Bloques de código reutilizables.</li>
+                <li>Realizan tareas específicas.</li>
+                <li>Pueden recibir parámetros y devolver resultados.</li>
+                <li>Mejoran organización y legibilidad del código.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: function Saludar() { alert("Hola"); }.</span>
+
+        <span class="subtema">Parámetros</span>
+        <span class="concepto">
+            Los parámetros son valores que se envían a una función para que realice su tarea con datos específicos. 
+            Permiten personalizar la ejecución de la función según las necesidades de cada situación y facilitan la reutilización del código.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Valores enviados a funciones.</li>
+                <li>Permiten personalizar la ejecución.</li>
+                <li>Facilitan reutilización de funciones.</li>
+                <li>Mantienen el código limpio y flexible.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: En Calcular(a, b), 'a' y 'b' son parámetros.</span>
+
+        <span class="subtema">Retorno</span>
+        <span class="concepto">
+            El retorno es el valor que una función devuelve después de realizar su operación. 
+            Permite que los resultados de la función se utilicen en otras partes del programa y es esencial para cálculos y consultas de datos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Devuelve un valor tras ejecutar la función.</li>
+                <li>Permite usar resultados en otras partes del programa.</li>
+                <li>Clave para cálculos y consultas.</li>
+                <li>Mejora modularidad y claridad del código.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: return resultado; devuelve el cálculo realizado.</span>
+
+        <span class="subtema">Errores comunes</span>
+        <span class="concepto">
+            Los errores comunes son fallas al escribir código, como errores de sintaxis, tipográficos o lógicos. 
+            Detectarlos y corregirlos es vital para el correcto funcionamiento de cualquier programa. 
+            Aprender a identificar patrones de errores frecuentes ayuda a programar de manera más eficiente y reduce el tiempo de depuración.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Pueden ser sintaxis, tipográficos o lógicos.</li>
+                <li>Detectarlos es crucial para buen funcionamiento.</li>
+                <li>Identificar patrones de errores frecuentes ayuda a programar mejor.</li>
+                <li>Prevención reduce tiempo de depuración.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Olvidar un punto y coma (;) al final de una instrucción.</span>
+
+        <span class="subtema">Depuración</span>
+        <span class="concepto">
+            La depuración es el proceso de localizar y corregir errores en un programa. 
+            Implica revisar el código línea por línea, analizar valores de variables y verificar la lógica de las instrucciones. 
+            Es un paso fundamental en el desarrollo de software profesional, asegurando que el programa funcione correctamente.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Localiza y corrige errores.</li>
+                <li>Revisión línea por línea y análisis de variables.</li>
+                <li>Fundamental en desarrollo profesional.</li>
+                <li>Herramientas como depuradores facilitan el proceso.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Revisar línea por línea para encontrar un cálculo incorrecto en un bucle.</span>
+
+        <span class="subtema">Buenas prácticas</span>
+        <span class="concepto">
+            Las buenas prácticas son normas y hábitos que permiten escribir código claro, mantenible y profesional. 
+            Incluyen nombrar variables coherentemente, comentar funciones importantes y estructurar el código de manera lógica. 
+            Facilitan la colaboración entre programadores y reducen errores futuros, garantizando software más robusto y fácil de actualizar.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Nombrado coherente de variables y funciones.</li>
+                <li>Comentarios en funciones importantes.</li>
+                <li>Estructura lógica y clara del código.</li>
+                <li>Facilitan mantenimiento y colaboración.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Comentar cada función y usar nombres descriptivos.</span>
+
+        <div class="video-link">
+            <h3>BUCLES FOR</h3>
+            <a href="https://www.youtube.com/watch?v=7bO5wlqeeEI" target="_blank">
+                Ver Video
+            </a>
+        </div>
+        <div class="video-link">
+            <h3>BUCLES WHILE</h3>
+            <a href="https://www.youtube.com/watch?v=0h_srypSheg" target="_blank">
+                Ver Video
+            </a>
+        </div>
+
+        <div class="video-link">
+            <h3>Programación en Python</h3>
+            <a href="https://www.youtube.com/watch?v=mRI8C2ZhDkg" target="_blank">
+                Ver Video
+            </a>
+        </div>
+
+        <button class="sim-btn" onclick="startSim(2)">Iniciar Simulación (15 Preguntas)</button>
+    </div>
+</section>
+
+<section id="t3">
+    <div class="card">
+        <h2>Tercer Trimestre – Avanzado</h2>
+
+        <span class="subtema">Arreglos</span>
+        <span class="concepto">
+            Los arreglos son estructuras de datos que almacenan múltiples valores bajo un mismo nombre de variable. 
+            Permiten acceder a cada elemento mediante un índice, facilitando operaciones como búsqueda, ordenamiento y modificación. 
+            Son esenciales para manejar listas de datos de manera eficiente y pueden contener números, texto o incluso otros arreglos (multidimensionales).<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Almacenan múltiples valores en una sola variable.</li>
+                <li>Acceso a elementos mediante índices.</li>
+                <li>Permiten operaciones como búsqueda y ordenamiento.</li>
+                <li>Pueden ser unidimensionales o multidimensionales.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: [1, 2, 3, 4] representa una lista de números que podemos recorrer con un bucle.</span>
+
+        <span class="subtema">Índices</span>
+        <span class="concepto">
+            Los índices indican la posición de un elemento dentro de un arreglo o lista, comenzando normalmente desde 0. 
+            Permiten acceder, modificar o eliminar valores específicos de manera directa y son fundamentales para evitar errores como "fuera de rango".<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Identifican la posición de un elemento.</li>
+                <li>Generalmente comienzan en 0.</li>
+                <li>Permiten acceso, modificación y eliminación directa.</li>
+                <li>Evitan errores de desbordamiento o fuera de rango.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: En ["manzana","pera","uva"], "pera" está en el índice 1.</span>
+
+        <span class="subtema">Matrices</span>
+        <span class="concepto">
+            Las matrices son arreglos de dos o más dimensiones, similares a tablas con filas y columnas. 
+            Permiten almacenar datos complejos, como tablas de puntajes, imágenes o mapas de celdas. 
+            Cada posición se identifica con un índice de fila y columna y son ampliamente usadas en ciencias, ingeniería y desarrollo de videojuegos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Almacenamiento de datos en filas y columnas.</li>
+                <li>Acceso mediante índices de fila y columna.</li>
+                <li>Permiten manejar información compleja.</li>
+                <li>Usadas en ciencia, ingeniería y videojuegos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: [[1,2],[3,4]] representa una matriz 2x2.</span>
+
+        <span class="subtema">Objetos</span>
+        <span class="concepto">
+            Un objeto representa una entidad del mundo real con propiedades y comportamientos. 
+            Permite agrupar datos y funciones relacionadas dentro de una misma estructura. 
+            Facilita la programación orientada a objetos y mejora la organización del código.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Representa entidades del mundo real.</li>
+                <li>Contiene propiedades y métodos.</li>
+                <li>Facilita la organización del código.</li>
+                <li>Fundamental en programación orientada a objetos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Objeto Persona con propiedades nombre, edad y método saludar().</span>
+
+        <span class="subtema">Clases</span>
+        <span class="concepto">
+            Las clases son plantillas para crear objetos con propiedades y métodos predefinidos. 
+            Permiten generar múltiples instancias sin repetir código y son la base de la programación orientada a objetos, facilitando la reutilización y organización de proyectos grandes.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Plantillas para crear objetos.</li>
+                <li>Incluyen propiedades y métodos predefinidos.</li>
+                <li>Permiten crear múltiples instancias.</li>
+                <li>Facilitan la reutilización y organización del código.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Clase 'Perro' para crear 'Fido' y 'Toby', cada uno con sus atributos y comportamientos.</span>
+
+        <span class="subtema">Métodos</span>
+        <span class="concepto">
+            Los métodos son funciones asociadas a un objeto o clase que permiten que los objetos realicen acciones o cálculos basados en sus propiedades. 
+            Organizan el código, evitan duplicación de funciones y son esenciales para la encapsulación y control de comportamiento en programación orientada a objetos.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Funciones asociadas a objetos o clases.</li>
+                <li>Permiten ejecutar acciones o cálculos.</li>
+                <li>Organizan el código y evitan duplicación.</li>
+                <li>Claves para encapsulación y control de comportamiento.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: perro.ladrar() ejecuta la acción de ladrar del objeto.</span>
+
+        <span class="subtema">Eventos</span>
+        <span class="concepto">
+            Los eventos son acciones que ocurren en un programa y que pueden ser detectadas y manejadas. 
+            Pueden generarse por interacción del usuario, cambios en datos o tiempo transcurrido y permiten crear aplicaciones interactivas y dinámicas.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Acciones detectables en el programa.</li>
+                <li>Generados por usuario, datos o tiempo.</li>
+                <li>Permiten interacción y dinamismo.</li>
+                <li>Clave en desarrollo web y aplicaciones modernas.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: onclick ejecuta una función al hacer clic en un botón.</span>
+
+        <span class="subtema">DOM</span>
+        <span class="concepto">
+            El DOM (Document Object Model) es la estructura que representa un documento HTML como un árbol de elementos. 
+            Permite acceder y modificar contenido, estilo y estructura de la página mediante código, siendo esencial para crear páginas dinámicas e interactivas.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Estructura jerárquica de elementos HTML.</li>
+                <li>Permite acceso y modificación de contenido y estilo.</li>
+                <li>Esencial para páginas interactivas.</li>
+                <li>Facilita manipulación eficiente del documento.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: document.getElementById("miDiv").style.backgroundColor = "red".</span>
+
+        <span class="subtema">Validaciones</span>
+        <span class="concepto">
+            Las validaciones verifican que los datos ingresados por el usuario sean correctos y seguros antes de procesarlos. 
+            Previenen errores, inconsistencias y vulnerabilidades, asegurando un correcto funcionamiento de la aplicación y una buena experiencia de usuario.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Comprobación de datos ingresados.</li>
+                <li>Prevención de errores y vulnerabilidades.</li>
+                <li>Esencial para seguridad y confiabilidad.</li>
+                <li>Fundamental para experiencia del usuario.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Comprobar que el campo correo electrónico no esté vacío y tenga formato correcto.</span>
+
+        <span class="subtema">Proyectos</span>
+        <span class="concepto">
+            Los proyectos integran todos los conocimientos adquiridos durante el curso, aplicando teoría en desarrollos reales. 
+            Permiten enfrentar problemas, buscar soluciones y consolidar habilidades de programación avanzada, preparación clave para escenarios profesionales.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Integran conocimientos del curso.</li>
+                <li>Aplican teoría en proyectos reales.</li>
+                <li>Fortalecen habilidades de programación.</li>
+                <li>Preparan para escenarios profesionales.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Crear una app de tareas que permita agregar, eliminar y marcar tareas completadas.</span>
+
+        <span class="subtema">Lógica compleja</span>
+        <span class="concepto">
+            La lógica compleja combina estructuras de control, bucles, funciones y objetos para resolver problemas avanzados. 
+            Permite optimizar procesos, automatizar decisiones y desarrollar algoritmos sofisticados, base de sistemas inteligentes y programas de alto nivel.<br>
+            <strong>Características:</strong>
+            <ul>
+                <li>Combina bucles, funciones y objetos.</li>
+                <li>Permite resolución de problemas avanzados.</li>
+                <li>Optimiza procesos y decisiones automáticas.</li>
+                <li>Base de sistemas inteligentes y programas complejos.</li>
+            </ul>
+        </span>
+        <span class="ejemplo">Ejemplo: Crear un motor de búsqueda que filtre resultados según relevancia y preferencias del usuario.</span>
+
+        <div class="video-link">
+            <h3>La validación de datos en Python para principiantes</h3>
+            <a href="https://www.youtube.com/watch?v=hKOMUsqKQcY&t=72s" target="_blank">
+                Ver Video
+            </a>
+        </div>
+        <div class="video-link">
+            <h3>MATRICES en PROGRAMACIÓN</h3>
+            <a href="https://www.youtube.com/watch?v=twRXsDm2FUo" target="_blank">
+                Ver Video
+            </a>
+        </div>
+
+        <button class="sim-btn" onclick="startSim(3)">Iniciar Simulación (15 Preguntas)</button>
+    </div>
+</section>
+
+<div id="simulador">
+    <div class="progress-box"><div class="progress" id="progress"></div></div>
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+</div>
+
+<audio id="correctSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_7e6f2d0e54.mp3" preload="auto"></audio>
+<audio id="wrongSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_c3c3c6e5fa.mp3" preload="auto"></audio>
+<audio id="victorySound" src="https://cdn.pixabay.com/audio/2021/08/04/audio_0625c1539c.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
